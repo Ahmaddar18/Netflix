@@ -92,8 +92,8 @@ class MovieOfTheDay extends React.Component {
           <h2>Season 2 now available</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque id quam sapiente unde voluptatum alias vero debitis, magnam quis quod.</p>
           <div className="button-wrapper">
-            <HeroButton primary={true} text="Watch now"/>
-            <HeroButton primary={false} text="+ My list"/>
+            <RedButton primary={true} text="Watch now"/>
+            <RedButton primary={false} text="+ My list"/>
           </div>
         </div>
         <div className="overlay"></div>
@@ -102,7 +102,7 @@ class MovieOfTheDay extends React.Component {
   }
 }
 
-class HeroButton extends React.Component {
+class RedButton extends React.Component {
   render() {
     return(
       <a href="#" className="Button" data-primary={this.props.primary}>{this.props.text}</a>
