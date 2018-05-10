@@ -1,9 +1,9 @@
 import React from 'react';
-import Logo from './App/Header/Logo';
-import Navigation from './App/Header/Navigation';
-import Profile from './App/Header/Profile';
-import MovieOfTheDay from './App/MovieOfTheDay';
-import ShowSlider from './App/ShowSlider';
+import Logo from './comp/Header/Logo';
+import Navigation from './comp/Header/Navigation';
+import Profile from './comp/Header/Profile';
+import MovieOfTheDay from './comp/MovieOfTheDay';
+import ShowSlider from './comp/ShowSlider';
 import './App.css';
 // debounce   , Library => lodash
 class App extends React.Component {
