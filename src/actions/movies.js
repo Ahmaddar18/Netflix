@@ -1,44 +1,44 @@
-export function SciFi() {
+export function SciFi(data) {
     return dispatch => {
       dispatch({
         type: "SCI_FI",
-        payload: true
+        payload: data
       });
     };
   }
 
-  export function MostWatched() {
+  export function MostWatched(data) {
     return dispatch => {
       dispatch({
         type: "MOST_WATCHED",
-        payload: true
+        payload: data
       });
     };
   }
 
-  export function TopTv() {
+  export function TopTv(data) {
     return dispatch => {
       dispatch({
         type: "TOPTV",
-        payload: true
+        payload: data
       });
     };
   }
 
-  export function Trending() {
+  export function Trending(data) {
     return dispatch => {
       dispatch({
         type: "TRENDING",
-        payload: true
+        payload: data
       });
     };
   }
 
-  export function Search() {
+  export function Search(data) {
     return dispatch => {
       dispatch({
         type: "SEARCH",
-        payload: true
+        payload: data
       });
     };
   }
