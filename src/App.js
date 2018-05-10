@@ -4,6 +4,7 @@ import Navigation from './comp/Header/Navigation';
 import Profile from './comp/Header/Profile';
 import MovieOfTheDay from './comp/MovieOfTheDay';
 import ShowSlider from './comp/ShowSlider';
+import { connect } from "react-redux";
 import './App.css';
 // debounce   , Library => lodash
 class App extends React.Component {
@@ -55,4 +56,12 @@ class App extends React.Component {
     )
   }
 }
-export default App;
+function mapStateToProps(state) {
+  console.log();
+  return {
+      movies: state.movies
+  }
+}
+
+
+export default connect(mapStateToProps)(App);

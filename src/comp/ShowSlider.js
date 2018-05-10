@@ -5,6 +5,8 @@ import MostWatchedSlider from './Slider/MostWatchedSlider';
 import TrendingSlider from './Slider/TrendingSlider';
 import TopTVSlider from './Slider/TopTVSlider';
 import SearchSlider from './Slider/SearchSlider';
+import { connect } from "react-redux";
+import {movies } from '../actions/movies';
 class ShowSlider extends React.Component {
     constructor(props){
       super(props)
@@ -103,4 +105,14 @@ class ShowSlider extends React.Component {
     }
   }
 
-  export default ShowSlider;
+  function mapStateToProps(state) {
+
+    return {
+        movies: state.movies
+    }
+}
+
+
+export default connect(mapStateToProps)(ShowSlider);
+
+ // export default ShowSlider;
