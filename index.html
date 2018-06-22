@@ -1,3 +1,13 @@
-<html>
- <script src="./src/index.js"></script> 
-</html>
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './src/index.css';
+import App from './App';
+import {Provider} from 'react-redux';
+import store from "./store";
+import registerServiceWorker from './src/registerServiceWorker';
+
+ReactDOM.render(  
+    <Provider store = {store}>
+    <App />
+    </Provider>, document.getElementById('root'));
+registerServiceWorker();
