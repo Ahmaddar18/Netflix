@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/ahmad2tweety/Getting%20Started/_apis/build/status/Ahmaddar18.NetflixPage?branchName=master)](https://dev.azure.com/ahmad2tweety/Getting%20Started/_build/latest?definitionId=1&branchName=master)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
